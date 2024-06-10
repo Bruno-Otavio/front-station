@@ -9,19 +9,20 @@ let points = 0;
 let amount = 1;
 let price = 10;
 
+
 ball.addEventListener('click', () => {
     points += amount;
     points_element.textContent = `Pontos: ${points}`;
 });
 
-ball.addEventListener('click', () => {
+button.addEventListener('click', () => {
     if (points >= price) {
-        price *= 2;
-        price_element.textContent `Preço: ${price} pontos`;
-
-        amount *= 2;
-
         points -= price;
         points_element.textContent = `Pontos: ${points}`;
+        
+        amount *= 2;
+
+        price *= 2;
+        price_element.textContent = `Preço: ${price} pontos`;
     }
 });
