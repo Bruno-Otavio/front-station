@@ -15,7 +15,7 @@ ball.addEventListener('click', () => {
 });
 
 ball.addEventListener('click', () => {
-    if (points === price) {
+    if (points >= price) {
         price *= 2;
         price_element.textContent `Preço: ${price} pontos`;
 
