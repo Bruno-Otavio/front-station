@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+body {
+    gap: 5px;
+    background:linear-gradient(90deg, rgba(169, 201, 250, 0.719) 0%, rgba(109, 197, 255, 0.603)100%); 
+}
+body h2 {
+    color:white;
+}
+
+main {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 300px;
+    min-width: 200px;
+    padding: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 20px rgba(70, 129, 255, 0.363), 
+                0px 0px 5px rgba(70, 129, 255, 0.363) inset;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.spnQtd {
+    text-align: end;
+}
+
+.imgBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5em;
+}
+
+img {
+    height: 6em;
+    width: 10em;
+    margin: 1em;
+}
+
+.answers {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+button {
+    width: 100%;
+    text-align: start;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #000CCC;
+    color: whitesmoke;
+}
+
+.finish {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.finish button {
+    text-align: center;
+}
+
+.navbar {
+    background-color: white;
+  display: grid;
+  place-content: center;
+  box-shadow: 0px 0px 10px rgba(165, 164, 164, 0.25);
+  padding: 1.25rem;
+}
+.navbar ul {
+  display: flex;
+  list-style: none;
+  align-items: end;
+}
+.navbar ul .item {
+  margin-right: 1rem;
+  font-size: larger;
+  text-decoration: none;
+  color: black;
+}
+.navbar ul .home {
+  font-size: x-large;
+  font-weight: bold;
+}
+

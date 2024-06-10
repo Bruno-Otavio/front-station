@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+}
+
+main {
+    display: grid;
+    place-items: center;
+
+    height: 92vh;
+    background:linear-gradient(90deg, rgba(169, 201, 250, 0.719) 0%, rgba(109, 197, 255, 0.603)100%); 
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 2.5rem;
+
+    width: 750px;
+    height: 500px;
+
+    background-color: white;
+    border-radius: 10px;
+
+    box-shadow: 0px 0px 20px rgba(70, 129, 255, 0.363), 
+                0px 0px 5px rgba(70, 129, 255, 0.363) inset;
+}
+
+.ball {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    background-color: lightskyblue;
+    transition: background-color 150ms ease-in-out;
+}
+
+.ball:active {
+    background-color: rgb(106, 164, 252);
+}
+
+.points {
+    font-size: larger;
+    -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+.button {
+    padding: 0.5rem;
+    border-radius: 15px;
+    background-color: transparent;
+}
+
+.opts {
+    display: grid;
+    place-items: center;
+}
+
+.price {
+    margin-bottom: 1rem;
+}
+
+.navbar {
+  display: grid;
+  place-content: center;
+  box-shadow: 0px 0px 10px rgba(165, 164, 164, 0.25);
+  padding: 1.25rem;
+}
+.navbar ul {
+  display: flex;
+  list-style: none;
+  align-items: end;
+}
+.navbar ul .item {
+  margin-right: 1rem;
+  font-size: larger;
+  text-decoration: none;
+  color: black;
+}
+.navbar ul .home {
+  font-size: x-large;
+  font-weight: bold;
+}
